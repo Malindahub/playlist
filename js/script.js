@@ -1,7 +1,22 @@
 // Complete Day 1 goals here
+let songs = [1, 2];
+let artists = [1, 2];
+let images = [1, 2];
+let links = [1, 2];
 
 function displaySongInfo() {
   // Complete the Day 2 goals inside this function
+  songs.forEach(function (name) {
+    $(".songs").append(`<p>${name}</p>`);
+  });
+  
+  artists.forEach(function (name) {
+    $(".artists").append(`<p>${name}</p>`);
+  });
+  
+  images.forEach(function (name) {
+    $(".images").append(`<p>${name}</p>`);
+  });
 }
 
 function emptySongInfo() {
