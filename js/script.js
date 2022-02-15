@@ -1,21 +1,29 @@
 // Complete Day 1 goals here
-let songs = [1, 2];
-let artists = [1, 2];
-let images = [1, 2];
-let links = [1, 2];
+let songs = ["Karma", "21", "Time Passing Through"];
+let artists = ["AJR", "Gracie Abrams", "Kaden MacKay"];
+let images = [
+  "https://cdn.glitch.global/76ace845-1a13-4b4a-bc59-cf97f163dd46/ajr.png?v=1644908895663",
+  "https://cdn.glitch.global/76ace845-1a13-4b4a-bc59-cf97f163dd46/gracieabrams.png?v=1644908719849", 
+  "https://cdn.glitch.global/76ace845-1a13-4b4a-bc59-cf97f163dd46/kadenmackay.png?v=1644908623317",
+];
+let links = ["https://www.youtube.com/watch?v=Vy1JwiXHwI4"];
 
 function displaySongInfo() {
   // Complete the Day 2 goals inside this function
   songs.forEach(function (name) {
     $(".songs").append(`<p>${name}</p>`);
   });
-  
+
   artists.forEach(function (name) {
     $(".artists").append(`<p>${name}</p>`);
   });
-  
-  images.forEach(function (name) {
-    $(".images").append(`<p>${name}</p>`);
+
+  images.forEach(function (image) {
+    $(".images").append("<img src='" + image + "'>");
+  });
+
+  links.forEach(function (link) {
+    $(".links").append("<a href='" + link + "'>" + "Listen" + "</a>"); 
   });
 }
 
